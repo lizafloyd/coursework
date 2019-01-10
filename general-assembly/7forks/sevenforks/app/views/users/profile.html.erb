@@ -1,0 +1,40 @@
+<h2>Welcome to 7Forks</h2>
+<p>Just a few questions to get your profile set up.</p>
+
+<%= form_tag({controller: "users", action: "setup"}, method: "post") do  %>
+
+  <p><%= label_tag(:p, "How many hours' sleep do you get in a night?") %>
+  <%= text_field_tag(:p) %></p>
+
+  <p><%= label_tag(:a, "How many times in a week do you exercise for at least 20 minutes?") %>
+  <%= text_field_tag(:a) %></p>
+
+  <p><%= check_box_tag(:b, "parent") %>
+  <%= label_tag(:b_parent, "I am responsible for the wellbeing of children.") %>
+  <br><%= check_box_tag(:c, "adult") %>
+  <%= label_tag(:c_adult, "I am responsible for the wellbeing of a family member with particular needs.") %>
+  <br><%= check_box_tag(:z, "solo") %>
+    <%= label_tag(:z_solo, "I am only responsible for my own wellbeing.") %></p>
+
+  <p><%= label_tag(:w, "How many hours a week do you work, including at home and off the clock?") %>
+  <%= text_field_tag(:w) %></p>
+
+  <p><%= check_box_tag(:h) %>
+  <%= label_tag(:h_hobby, "I have a hobby that absorbs at least ten hours a week.") %>
+  <br><%= label_tag(:i, "If yes, please enter hobby name here.") %><br>
+  <%= text_field_tag(:i) %></p>
+
+  <p>
+    <span>Please select any of the following stressors that apply to you.</span><br>
+    <%= label_tag(:d, "I feel that I am being continually hurt by someone in my life.") %>
+    <%= check_box_tag(:d, "abuse")  %><br>
+    <%= label_tag(:e, "I regularly feel lonely or depressed.") %>
+    <%= check_box_tag(:e, "loneliness")  %><br>
+    <%= label_tag(:f, "I feel listless and bored.") %>
+    <%= check_box_tag(:f, "bored")  %><br>
+    </p>
+
+
+
+  <%= submit_tag("Submit") %></%>
+<% end %>

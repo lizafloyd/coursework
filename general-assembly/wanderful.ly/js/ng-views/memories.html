@@ -1,0 +1,49 @@
+<div class="dreamplan">
+<h2>Have Done</h2>
+<h4>Add your memories, to reminisce and to share.</h4>
+
+<div class="dataContainer">
+<h3>Your recommendations</h3>
+<div data-ng-repeat="rec in vm.recommendations">
+  <p>{{rec.text}}</p>
+  <a data-ui-sref="recommendationShow({id: rec._id})">View Recommendation</a>
+</div>
+</div>
+
+<h4>Add New Recommendation</h4>
+<form action="/recommendations" method="post">
+  <input type="text" data-ng-model="vm.newRec.country" placeholder="Country" />
+  <textarea rows='4' cols='50' data-ng-model="vm.newRec.text" placeholder="Recommendation" ></textarea>
+  <button type="button" data-ng-click="vm.createRec()">Add Recommendation</button>
+</form>
+
+<div class="dataContainer">
+<h3>Your stories</h3>
+<div data-ng-repeat="story in vm.stories">
+  <p>{{story.text}}</p>
+  <a data-ui-sref="storyShow({id: story._id})">View Story</a>
+</div>
+</div>
+
+<h4>Add New Story</h4>
+<form action="/stories" method="post">
+  <input type="text" data-ng-model="vm.newStory.country" placeholder="Country" />
+  <textarea rows='4' cols='50' data-ng-model="vm.newStory.text" placeholder="Text"></textarea>
+  <button type="button" data-ng-click="vm.createStory()">Add Story</button>
+</form>
+
+<div class="dataContainer">
+<h3>Your photos</h3>
+<div data-ng-repeat="photo in vm.photos">
+  <img src="{{photo.photo}}"><br>
+  <a data-ui-sref="photoShow({id: photo._id})">View Photo</a>
+</div>
+</div>
+
+<h4>Add New Photo</h4>
+<form action="/photos" method="post">
+  <input type="text" data-ng-model="vm.newPhoto.country" placeholder="Country" />
+  <input type="text" data-ng-model="vm.newPhoto.photo" placeholder="Photo Url" />
+  <button type="button" data-ng-click="vm.createPhoto()">Add Photo</button>
+</form>
+</div>

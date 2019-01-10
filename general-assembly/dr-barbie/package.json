@@ -1,0 +1,20 @@
+{
+  "name": "dr_barbie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizafloyd/dr_barbie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lizafloyd/dr_barbie/issues"
+  },
+  "homepage": "https://github.com/lizafloyd/dr_barbie#readme"
+}
