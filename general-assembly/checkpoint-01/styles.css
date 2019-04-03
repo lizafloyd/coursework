@@ -1,0 +1,60 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+  font-family
+}
+header, footer, aside, .main{
+  padding: 1em;
+}
+header, footer{
+  flex: 0 0 100%;
+  background:#eee;
+}
+aside{
+  flex: 1;
+  background:#ddd;
+}
+.main{
+  flex: 3;
+}
+.left, .right{
+  float:left;
+  width:50%;
+  background:#ccc;
+  padding:1em;
+  border: 5px solid #aaa;
+}
+img{
+  max-width:100%;
+}
+
+@media(max-width:600px){
+  header {
+    order:0;
+  }
+  .main{
+    order:1;
+  }
+  aside{
+    order:2;
+  }
+  footer{
+    order:3;
+  }
+}
+header > *{
+  margin:0;
+}
+footer > *{
+  margin: 0;
+}
+.main > *{
+  margin: 0;
+}
+aside > *{
+  margin: 0;
+}

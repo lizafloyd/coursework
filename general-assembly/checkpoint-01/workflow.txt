@@ -1,0 +1,16 @@
+
+//if you want to pull down first{
+//fork on github
+//git clone
+}
+
+git checkout -b my-solution
+git add .
+git commit -m ""
+
+//if you want to merge into the master before pushing{
+//git checkout master
+//git merge my-solution
+//}
+
+git push origin my-solution
