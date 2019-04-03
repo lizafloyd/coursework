@@ -1,0 +1,5 @@
+<h2>Index <%= link_to "[Add New]", new_post_path %></h2>
+
+<% @posts.each do |post| %>
+  <%= link_to post.title, post %> <br>
+<% end %>

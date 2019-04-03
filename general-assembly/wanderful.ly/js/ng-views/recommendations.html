@@ -1,0 +1,40 @@
+<div class="dreamplan">
+  <h2>Has Been Done</h2>
+  <h4>What country are you interested in getting to know?  Other users are waiting to inspire you.</h4>
+
+  <div class="countrySelect">
+    <input type="text" data-ng-model="vm.country" placeholder="Country" />
+    <button type="button" data-ng-click="vm.getRecs()">Get Recommendations</button>
+  </div>
+  
+  <div class="dataContainer">
+    <h4>Recommendations</h4>
+    <div data-ng-repeat="rec in vm.recommendations" class="data">
+      <p>{{rec.text}}</p>
+      <div data-ng-repeat="trip in vm.trips">
+        <button type="button" data-ng-click="vm.addRec(rec, trip)">Add to {{trip.name}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="dataContainer">
+    <h4>Stories</h4>
+    <div data-ng-repeat="story in vm.stories" class="story">
+      <p>{{story.text}}</p>
+      <div data-ng-repeat="trip in vm.trips">
+        <button type="button" data-ng-click="vm.addStory(story, trip)">Add to {{trip.name}}</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dataContainer">
+    <h4>Photos</h4>
+    <div data-ng-repeat="photo in vm.photos" class="photo">
+      <img src="{{photo.photo}}">
+      <div data-ng-repeat="trip in vm.trips">
+        <button type="button" data-ng-click="vm.addPhoto(photo, trip)">Add to {{trip.name}}</button>
+      </div>
+    </div>
+  </div>
+</div>

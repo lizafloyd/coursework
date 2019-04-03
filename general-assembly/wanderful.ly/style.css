@@ -1,0 +1,213 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: #EAFDFF;
+  font-family: 'Quicksand', sans-serif;
+
+}
+header {
+  background-image: url('https://s19.postimg.org/te7mbwc2b/background069.jpg');
+  background-position: top;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: 'Amatic SC', cursive;
+  margin:0;
+  padding: 80px;
+  border:0;
+}
+a {
+  text-decoration: none;
+  font-style: italic;
+  color: #45C6C6;
+}
+button {
+  margin: 0.6em 0;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #fff;
+  padding: 1%;
+  color: #000;
+}
+input {
+  width: 30%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding:9px;
+  color: #555;
+}
+textarea {
+  margin-bottom: 2%;
+}
+.nav {
+  text-align: center;
+  color: #EAFDFF;
+  padding:10px;
+}
+.welcomeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 2em;
+  font-weight: bold;
+  width: 700px;
+  margin:auto;
+}
+.welcome1 a {
+  color: #53EDED;
+}
+.welcome2 a {
+  color: #FF6B6B;
+}
+.welcomeContainer div {
+  padding: 50px;
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  text-align: center;
+}
+.navigation {
+  text-align: center;
+  padding:15px;
+
+}
+.text {
+  font-size: 12px;
+}
+.title {
+  font-size: 25px;
+}
+.loginForm {
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 40%;
+  margin:auto;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 200%;
+}
+.loginForm h2 {
+  margin-bottom: 3%;
+}
+button a {
+  color:black;
+  font-style: normal;
+}
+.dreamplan h2, h3, h4, h3 {
+  text-align: center;
+  margin:10px;
+}
+.dreamsplans {
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 40%;
+  height:60px;
+  padding:10px;
+  text-align: center;
+  margin:auto;
+  margin-top:20px;
+}
+.dreamplanform {
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 40%;
+  padding:10px;
+  text-align: center;
+  margin:auto;
+  margin-top:20px;
+  margin-bottom: 30px;
+}
+.dreamplan p {
+  font-size: 1.2em;
+}
+
+.dreamplancontainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin:auto;
+}
+
+.dataContainer {
+  width:80%;
+  background-color: white;
+  border: solid #EAEAEA;
+  padding:3%;
+  text-align: center;
+  margin:auto;
+  margin-top: 20px;
+}
+.data {
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 80%;
+  padding:10px;
+  text-align: center;
+  margin:auto;
+  margin-top:20px;
+}
+.story {
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 80%;
+  padding:10px;
+  text-align: center;
+  margin:auto;
+  margin-top:20px;
+  font-size: 11px;
+}
+.photo {
+  border: solid #EAEAEA;
+  background-color: #F7FEFF;
+  width: 80%;
+  padding:10px;
+  text-align: center;
+  margin:auto;
+  margin-top:20px;
+}
+img {
+  display: block;
+  width:70%;
+  margin:auto;
+  margin-bottom: 2%;
+}
+.countrySelect {
+  width:55%;
+  margin:auto;
+}
+.countrySelect input {
+  width:100%;
+}
+.dreamplan form {
+  width:50%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+}
+.dreamplan form input {
+  width:auto;
+}
+.dreamplan button {
+  width:50%;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 3%;
+}
+.dreamplan p {
+  text-align: center;
+  font-size: 15px;
+}
+.dataContainer h3 {
+  font-weight: bolder;
+  font-size: 1.3em;
+}

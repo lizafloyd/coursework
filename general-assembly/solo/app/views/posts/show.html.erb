@@ -1,0 +1,12 @@
+
+<h1><%= @post.title %><%= link_to "[Edit]", edit_post_path(@post) %></h1>
+
+<img src="<%=  @post.photo_url %>" alt="">
+
+<p><%= @post.text %></p>
+
+<p>Comments <%= link_to "(+)", new_post_comment_path(@post) %></p>
+
+<% @comments.each do |comment| %>
+  <p><%= link_to comment.text, edit_post_comment_path(@post, comment)%></p>
+<% end %>
